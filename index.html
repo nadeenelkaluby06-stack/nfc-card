@@ -45,9 +45,10 @@
 
     .title {
       font-size: 14px;
-      color: #9ca3af;
+      color: rgb(239, 177, 187);
       margin-bottom: 15px;
     }
+
 
     .description {
       font-size: 14px;
@@ -61,7 +62,7 @@
     }
 
     .info a {
-      color: #22c55e;
+      color: pink;
       text-decoration: none;
     }
 
@@ -84,21 +85,28 @@
       transition: 0.3s;
     }
 
-    .btn:hover {
-      background-color: #22c55e;
+   .btn:hover {
+      background-color: pink;
       color: #000;
     }
 
-    .save-contact {
+
+    .save-contact-btn {
       display: block;
       margin-top: 10px;
       text-align: center;
       padding: 14px;
-      background-color: #22c55e;
+      background-color: pink;
       color: #000;
       border-radius: 12px;
       font-weight: bold;
       text-decoration: none;
+      
+    }
+
+    .save-contact-btn:hover {
+        background-color: rgb(120, 88, 93);
+        color: #000;
     }
   </style>
 </head>
@@ -128,11 +136,12 @@
       </div>
 
       <!-- Save Contact -->
-      <a class="save-contact" href="tel:+201110602582" download>
+      <a href="contact.vcf" download class="save-contact-btn">
         Save Contact
-      </a>
+        </a>
     </div>
   </div>
 
 </body>
 </html>
+
